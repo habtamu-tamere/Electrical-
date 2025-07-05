@@ -1,0 +1,52 @@
+<div class="lead-form">
+    <h3>Get a Free Quote</h3>
+    <p>Fill out this form and we'll contact you within 24 hours</p>
+    
+    <form id="leadForm" action="/leads" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="service">Service Needed*</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="Electrical Installations">Electrical Installations</option>
+                <option value="Solar Power">Solar Power Solutions</option>
+                <option value="Generator Maintenance">Generator Maintenance</option>
+                <option value="Lighting Solutions">Lighting Solutions</option>
+                <option value="Fire Safety Systems">Fire Safety Systems</option>
+                <option value="HVAC Services">HVAC Services</option>
+                <option value="Facility Maintenance">Facility Maintenance</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message (Optional)</label>
+            <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit Request</button>
+        
+        <div class="form-footer">
+            <p>We respect your privacy. Your information will not be shared.</p>
+        </div>
+    </form>
+    
+    <div id="formSuccess" class="form-success" style="display: none;">
+        <h4>Thank You!</h4>
+        <p>Your request has been submitted. We'll contact you shortly.</p>
+    </div>
+</div>
