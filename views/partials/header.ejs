@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | EthioPower Solutions</title>
+    <meta name="description" content="<%= metaDescription %>">
+    <meta name="keywords" content="<%= keywords || 'electrical services Ethiopia, solar power Addis Ababa, facility maintenance, HVAC services, fire safety systems' %>">
+    <meta name="author" content="EthioPower Solutions">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="<%= title %> | EthioPower Solutions">
+    <meta property="og:description" content="<%= metaDescription %>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= canonicalUrl %>">
+    <meta property="og:image" content="<%= ogImage || '/images/ethiopower-social.jpg' %>">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="/css/style.css" as="style">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "EthioPower Solutions",
+        "image": "<%= process.env.BASE_URL %>/images/ethiopower-logo.jpg",
+        "@id": "<%= process.env.BASE_URL %>",
+        "url": "<%= process.env.BASE_URL %>",
+        "telephone": "+251-9X-XXX-XXXX",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Bole Road",
+            "addressLocality": "Addis Ababa",
+            "addressRegion": "AA",
+            "postalCode": "1000",
+            "addressCountry": "ET"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 9.005401,
+            "longitude": 38.763611
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "sameAs": [
+            "https://www.facebook.com/EthioPowerSolutions",
+            "https://www.linkedin.com/company/ethiopower-solutions",
+            "https://twitter.com/EthioPower"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <img src="/images/ethiopower-logo.png" alt="EthioPower Solutions Logo" width="180" height="60">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="tel:+2519XXXXXXX" class="btn btn-secondary">Call Now</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
