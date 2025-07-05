@@ -1,0 +1,92 @@
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>EthioPower Solutions</h3>
+                    <p>Ethiopia's leading electrical and facility maintenance company, providing reliable 24/7 services across Addis Ababa and all over Ethiopia.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/EthioPowerSolutions" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/facebook-icon.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="https://twitter.com/EthioPower" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/twitter-icon.svg" alt="Twitter" width="24" height="24">
+                        </a>
+                        <a href="https://linkedin.com/company/ethiopower-solutions" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/linkedin-icon.svg" alt="LinkedIn" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="/services#electrical">Electrical Systems</a></li>
+                        <li><a href="/services#solar">Solar Power</a></li>
+                        <li><a href="/services#lighting">Lighting Solutions</a></li>
+                        <li><a href="/services#fire-safety">Fire Safety</a></li>
+                        <li><a href="/services#hvac">HVAC Services</a></li>
+                        <li><a href="/services#maintenance">Facility Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <address>
+                        <p><strong>Head Office:</strong><br>
+                        Bole Road, Addis Ababa, Ethiopia</p>
+                        <p><strong>Phone:</strong> <a href="tel:+2519XXXXXXX">+251 9X XXX XXXX</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@ethiopowersolutions.com">info@ethiopowersolutions.com</a></p>
+                        <p><strong>24/7 Emergency:</strong> <a href="tel:+2519XXXXXXX">+251 9X XXX XXXX</a></p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <%= new Date().getFullYear() %> EthioPower Solutions. All Rights Reserved.</p>
+                <p>Registered Electrical Contractor License #EC-XXXXX</p>
+            </div>
+        </div>
+        
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/2519XXXXXXX?text=Hello%20EthioPower%20Solutions,%20I%20need%20information%20about%20your%20services" 
+           class="whatsapp-float" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Chat with us on WhatsApp">
+            <img src="/images/whatsapp-icon.svg" alt="WhatsApp" width="32" height="32">
+        </a>
+    </footer>
+    
+    <!-- Lead Capture Modal (hidden by default) -->
+    <div id="leadModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <%- include('../partials/lead-capture') %>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-X');
+    </script>
+</body>
+</html>
